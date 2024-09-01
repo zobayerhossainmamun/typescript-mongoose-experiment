@@ -1,0 +1,287 @@
+[
+    {
+        "name": "Laptop Pro A1",
+        "price": 1299.99,
+        "discount": 10,
+        "category": "laptop",
+        "inStock": true,
+        "description": "A powerful laptop with a sleek design and high-resolution display, perfect for professionals.",
+        "variants": {
+            "ram": "16GB",
+            "color": "Space Gray"
+        },
+        "tags": [
+            "high-performance",
+            "ultrabook",
+            "professional",
+            "retina display",
+            "SSD"
+        ]
+    },
+    {
+        "name": "Laptop Pro B2",
+        "price": 1499.99,
+        "discount": 12,
+        "category": "laptop",
+        "inStock": false,
+        "description": "An ultra-thin laptop with a long battery life, suitable for business use and travel.",
+        "variants": {
+            "ram": "8GB",
+            "color": "Silver"
+        },
+        "tags": [
+            "ultra-thin",
+            "long battery life",
+            "business",
+            "portable",
+            "SSD"
+        ]
+    },
+    {
+        "name": "Gaming Laptop X1",
+        "price": 1899.99,
+        "discount": 15,
+        "category": "laptop",
+        "inStock": true,
+        "description": "A gaming laptop with a powerful GPU and high-refresh-rate display, designed for serious gamers.",
+        "variants": {
+            "ram": "32GB",
+            "color": "Black"
+        },
+        "tags": [
+            "gaming",
+            "high-performance",
+            "dedicated GPU",
+            "high-refresh rate",
+            "RGB keyboard"
+        ]
+    },
+    {
+        "name": "Laptop Convertible C1",
+        "price": 999.99,
+        "discount": 8,
+        "category": "laptop",
+        "inStock": true,
+        "description": "A versatile 2-in-1 convertible laptop with a touch screen and stylus support, ideal for creatives.",
+        "variants": {
+            "ram": "8GB",
+            "color": "Blue"
+        },
+        "tags": [
+            "2-in-1",
+            "touch screen",
+            "stylus support",
+            "lightweight",
+            "SSD"
+        ]
+    },
+    {
+        "name": "Laptop Budget D1",
+        "price": 599.99,
+        "discount": 5,
+        "category": "laptop",
+        "inStock": true,
+        "description": "An affordable laptop with decent performance for everyday tasks and light multitasking.",
+        "variants": {
+            "ram": "4GB",
+            "color": "Gray"
+        },
+        "tags": [
+            "budget",
+            "everyday use",
+            "lightweight",
+            "affordable",
+            "SSD"
+        ]
+    },
+    {
+        "name": "Smartphone Max X1",
+        "price": 999.99,
+        "discount": 10,
+        "category": "smartphone",
+        "inStock": true,
+        "description": "A high-end smartphone with a powerful processor and advanced camera system, ideal for photography enthusiasts.",
+        "variants": {
+            "ram": "12GB",
+            "color": "Midnight Black"
+        },
+        "tags": [
+            "high-performance",
+            "advanced camera",
+            "5G",
+            "water-resistant",
+            "fast charging"
+        ]
+    },
+    {
+        "name": "Smartphone Lite A2",
+        "price": 499.99,
+        "discount": 15,
+        "category": "smartphone",
+        "inStock": false,
+        "description": "A budget-friendly smartphone with a large display and long battery life, perfect for everyday use.",
+        "variants": {
+            "ram": "4GB",
+            "color": "Silver"
+        },
+        "tags": [
+            "budget",
+            "large display",
+            "long battery life",
+            "dual sim",
+            "fast charging"
+        ]
+    },
+    {
+        "name": "Smartphone Pro Z3",
+        "price": 799.99,
+        "discount": 12,
+        "category": "smartphone",
+        "inStock": true,
+        "description": "A premium smartphone with an edge-to-edge display and superior build quality, designed for style and functionality.",
+        "variants": {
+            "ram": "8GB",
+            "color": "Ocean Blue"
+        },
+        "tags": [
+            "premium build",
+            "edge-to-edge display",
+            "5G",
+            "wireless charging",
+            "fast processor"
+        ]
+    },
+    {
+        "name": "Smartphone Mini M1",
+        "price": 699.99,
+        "discount": 20,
+        "category": "smartphone",
+        "inStock": true,
+        "description": "A compact smartphone with powerful specs and an ergonomic design, perfect for one-handed use.",
+        "variants": {
+            "ram": "6GB",
+            "color": "Rose Gold"
+        },
+        "tags": [
+            "compact",
+            "ergonomic",
+            "fast charging",
+            "5G",
+            "high-resolution camera"
+        ]
+    },
+    {
+        "name": "Smartphone Ultra G5",
+        "price": 1099.99,
+        "discount": 18,
+        "category": "smartphone",
+        "inStock": true,
+        "description": "An ultra-premium smartphone with a foldable display and top-tier hardware, for users who demand the best.",
+        "variants": {
+            "ram": "16GB",
+            "color": "Phantom Silver"
+        },
+        "tags": [
+            "foldable display",
+            "ultra-premium",
+            "top-tier hardware",
+            "5G",
+            "long battery life"
+        ]
+    },
+    {
+        "name": "Desktop Gaming X1",
+        "price": 1499.99,
+        "discount": 10,
+        "category": "desktop",
+        "inStock": true,
+        "description": "A high-performance gaming desktop with top-tier GPU and cooling system, designed for gamers.",
+        "variants": {
+            "ram": "32GB",
+            "color": "Black"
+        },
+        "tags": [
+            "gaming",
+            "high-performance",
+            "dedicated GPU",
+            "advanced cooling",
+            "RGB lighting"
+        ]
+    },
+    {
+        "name": "Desktop Workstation Pro",
+        "price": 1799.99,
+        "discount": 12,
+        "category": "desktop",
+        "inStock": true,
+        "description": "A powerful workstation desktop with multi-core processor and large memory capacity, suitable for professional applications.",
+        "variants": {
+            "ram": "64GB",
+            "color": "Silver"
+        },
+        "tags": [
+            "professional",
+            "high-performance",
+            "multi-core processor",
+            "large memory",
+            "expandable"
+        ]
+    },
+    {
+        "name": "Desktop Home Edition",
+        "price": 799.99,
+        "discount": 8,
+        "category": "desktop",
+        "inStock": true,
+        "description": "An affordable desktop for home use with sufficient performance for everyday tasks and media consumption.",
+        "variants": {
+            "ram": "8GB",
+            "color": "White"
+        },
+        "tags": [
+            "home use",
+            "affordable",
+            "everyday tasks",
+            "media consumption",
+            "compact design"
+        ]
+    },
+    {
+        "name": "Desktop Compact Mini",
+        "price": 499.99,
+        "discount": 15,
+        "category": "desktop",
+        "inStock": false,
+        "description": "A compact desktop with a small footprint, ideal for limited space and basic computing needs.",
+        "variants": {
+            "ram": "4GB",
+            "color": "Gray"
+        },
+        "tags": [
+            "compact",
+            "space-saving",
+            "basic computing",
+            "budget-friendly",
+            "small footprint"
+        ]
+    },
+    {
+        "name": "Desktop All-in-One A3",
+        "price": 1299.99,
+        "discount": 5,
+        "category": "desktop",
+        "inStock": true,
+        "description": "An all-in-one desktop with a sleek design and integrated components, perfect for a clutter-free workspace.",
+        "variants": {
+            "ram": "16GB",
+            "color": "Black"
+        },
+        "tags": [
+            "all-in-one",
+            "sleek design",
+            "integrated components",
+            "clutter-free",
+            "high-resolution display"
+        ]
+    }
+]
