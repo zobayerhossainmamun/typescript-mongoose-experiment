@@ -174,4 +174,123 @@ export default class EProduct {
             }
         ]);
     }
+
+    /**
+     * Count and product list by price range
+     * @returns 
+     */
+    public countListProductByPriceRange() {
+        return Product.aggregate([
+            {
+                $bucket: {
+                    groupBy: "$discount",
+                    boundaries: [0, 10, 20, 30],
+                    default: "Other",
+                    output: {
+                        count: { $sum: 1 },
+                        averagePrice: { $avg: "$price" },
+                        names: {
+                            $push: "$name"
+                        }
+                    }
+                }
+            }
+        ]);
+    }
+
+    /**
+     * Count and list product by auto price range
+     * @returns 
+     */
+    public countListProductByAutoPriceRange() {
+        return Product.aggregate([
+            {
+                $bucketAuto: {
+                    groupBy: "$price",
+                    buckets: 5,
+                    output: {
+                        count: { $sum: 1 },
+                        averagePrice: { $avg: "$price" }
+                    }
+                }
+            }
+        ]);
+    }
+
+    /**
+     * Get count product by multiple stages
+     * @returns 
+     */
+    public countProductMultipleStage() {
+        return Product.aggregate([
+            {
+                $facet: {
+                    categorizedByTags: [
+                        {
+                            $unwind: "$tags"
+                        },
+                        {
+                            $sortByCount: "$tags"
+                        }
+                    ],
+                    categorizedByPrice: [
+                        {
+                            $match: {
+                                price: {
+                                    $exists: 1
+                                }
+                            }
+                        },
+                        {
+                            $bucket: {
+                                groupBy: "$price",
+                                boundaries: [0, 150, 200, 300, 400],
+                                default: "Other",
+                                output: {
+                                    count: { $sum: 1 },
+                                    titles: { $push: "$name" }
+                                }
+                            }
+                        }
+                    ],
+                    categorizedBycategory: [
+                        {
+                            $bucketAuto: {
+                                groupBy: "$category",
+                                buckets: 4
+                            }
+                        }
+                    ]
+                }
+            }
+        ]);
+    }
+
+    /**
+     * Get product list with tags count
+     * @returns 
+     */
+    public getProductWithTagCount() {
+        return Product.aggregate([
+            {
+                $set: {
+                    totalTags: { $size: "$tags" }
+                }
+            }
+        ]);
+    }
+
+    /**
+     * Get product with pagination
+     * @param page 
+     * @returns 
+     */
+    public getProductWithPagination(page: number) {
+        const limit = 5;
+        const offset = Math.ceil(limit * page);
+        return Product.aggregate([
+            { $skip: offset },
+            { $limit: limit }
+        ]);
+    }
 }

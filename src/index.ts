@@ -16,8 +16,8 @@ async function main() {
     // await _eUser.importUsers();
     // console.log('Users has been imported.');
 
-    let result = await _eProduct.groupAvgPriceAndCountByCategory();
-    console.log(result);
+    // let result = await _eProduct.groupAvgPriceAndCountByCategory();
+    // console.log(result);
 
     // await _eOrder.createOrder([{
     //     productId: '66d4098dd7c0a2ce5718deb4',

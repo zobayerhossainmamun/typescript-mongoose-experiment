@@ -21,3 +21,14 @@ export class NamedValue<T> {
         return `${this._value}`;
     }
 }
+
+// Merge Two Object
+type Merge<T, U> = T & U;
+export function mergeObjects<T, U>(obj1: T, obj2: U): Merge<T, U> {
+    return { ...obj1, ...obj2 }
+}
+
+// Dynamic value and data type
+export function DynamicDataTypeValue<Type>(arg: Type): Type {
+    return arg;
+}
